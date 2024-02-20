@@ -1,14 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Form</title>
-</head>
-<body>
-    <h1>Form Data:</h1>
-    <p>Name: 
-		<?php 
-	echo htmlspecialchars($_POST["name"]); 
-	?>
-	</p>
-</body>
-</html>
+
+<?php
+
+$name = $_POST["name"];
+$subject = $_POST["subject"];
+$message = $_POST["message"];
+
+echo "<h2> Information received </h2>";
+echo "The name received is: " . $name . "<br/>";
+echo "The subject received is: " . $subject . "<br/>";
+echo "The message received is: " . $message . "<br/>";
+
+?>
